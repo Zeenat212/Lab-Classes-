@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classes1
+namespace Classes2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Trip trip = new Trip("New York", 300, 50, 15);
-            trip.ShowTrip();
+            Fraction fraction = new Fraction(10, 100);
+            fraction.ShowFraction();
+
 
         }
     }
