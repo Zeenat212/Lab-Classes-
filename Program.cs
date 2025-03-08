@@ -4,18 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classes3
+namespace Classes4
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            MealCard card = new MealCard("Alice");
-            card.BuyFood(30);
-            card.AddPoints(20);
-            card.BuyFood(100);
+            Book book = new Book();
+            book.Input();
+            book.PrintBook();
+            Console.WriteLine("\t\t<--------------|Search a Book|-------------->");
 
-
+            Console.WriteLine("Enter The Book Title Do you want to Search: ");
+            string book1 = Console.ReadLine();
+            for (int i = 0; i < book.Title.Length; i++)
+            {
+                if (book.Title[i] == book1)
+                {
+                    book.Search(book1);
+                }
+            }
         }
+
+
+
     }
 }
+   
