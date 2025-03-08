@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classes2
+namespace Classes3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Fraction fraction = new Fraction(10, 100);
-            fraction.ShowFraction();
+            MealCard card = new MealCard("Alice");
+            card.BuyFood(30);
+            card.AddPoints(20);
+            card.BuyFood(100);
 
 
         }
